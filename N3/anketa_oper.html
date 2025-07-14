@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name,
+            age,
+            age_days,
+            gender,
+            pensionable_age;
+        name = prompt('Введите ваше ФИО', 'Петров Петр Петрович');
+        age = prompt('Введите ваш возраст, лет', '20');
+        gender = confirm('Ваш пол мужской?\n("Оk" - мужской, "Отмена" - женский)')
+        age_days = age * 365;
+        gender == true ?  gender = 'мужской' : gender = 'женский';
+        pensionable_age = gender == true ? (age >= 63 ? 'да' : 'нет') : (age >= 58 ? 'да' : 'нет');
+        alert("ФИО: " + name + "\n" +
+              "возраст, лет: " + age + "\n" +
+              "возраст, дней: " + age_days  + "\n" +
+              "пол: " + gender + "\n" +
+              "пенсионный возраст: " + pensionable_age);
+    </script>
+</body>
+</html>
